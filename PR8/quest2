@@ -1,0 +1,11 @@
+count_even = 0
+
+for i in range(10):
+    num = int(input("Введите число из последовательности "))
+    if num % 2 == 0:
+        count_even += 1
+
+if count_even == 10:
+    print("YES")
+else:
+    print("NO")
