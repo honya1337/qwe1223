@@ -1,0 +1,17 @@
+price_per_service=int(input("Введите цену за услугу ведьмака: "))
+
+count=0
+
+while price_per_service >= 25:
+    price_per_service = price_per_service - 25
+    count += 1
+while price_per_service >=10:
+    price_per_service = price_per_service - 10
+    count += 1
+while price_per_service >=5:
+    price_per_service = price_per_service - 5
+    count += 1
+while price_per_service >=1:
+    price_per_service = price_per_service - 1
+    count += 1
+print(f"Всего монет понадобиться для оплаты услуги: {count}")
