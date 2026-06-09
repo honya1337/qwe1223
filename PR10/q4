@@ -1,0 +1,20 @@
+total=0
+while True:
+    price=int(input("Введите цену товара: "))
+
+    if price==0:
+        break
+    if price<0:
+        print("Ошибка. Цена не может быть отрицательной")
+        continue
+    total+=price
+
+if total>1000:
+    discount=total*0.1
+    final_price=total-discount
+    print(f"Сумма покупок: {total}")
+    print(f"Скидка 10%: {discount}")
+    print(f"Итоговая сумма к оплате: {final_price}")
+else:
+    print(f"Сумма покупок равна: {total}")
+    print(f"Итоговая сумма к оплате: {total}")
