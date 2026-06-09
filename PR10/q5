@@ -1,0 +1,21 @@
+start_balance=1000
+print("1 - Узнать баланс")
+print("2 - Снять 100р с баланса")
+print("3 - Положить 100р на баланс")
+print("4 - Выход")
+while True:
+    num=int(input("Введите число из меню: "))
+    if num==1:
+        print(f'Ваш баланс составляет: {start_balance}')
+    if num==2:
+        if start_balance>=100:
+            start_balance-=100
+            print("Снято")
+        else:
+            print("Недостаточно средств")
+    if num==3:
+        start_balance+=100
+        print("Положено на счёт")
+    if num==4:
+        print("До свидания!")
+        break
