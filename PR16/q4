@@ -1,0 +1,10 @@
+cru="Bond Smith Hunt"
+mi_6="Bond Power Hunt"
+kgb="Petrov Hunt Ivanov"
+
+set_cru=set(cru.split())
+set_mi_6=set(mi_6.split())
+set_kgb=set(kgb.split())
+
+double_agents=sorted(set(set_cru)&set(set_mi_6)-set(set_kgb),reverse=True)
+print(*double_agents)
