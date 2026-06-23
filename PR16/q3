@@ -1,0 +1,18 @@
+server_a="data.db image.png log.txt"
+server_b="image.png script.py data.db"
+
+set_a=set(server_a.split())
+set_b=set(server_b.split())
+
+common_files=sorted(set_a & set_b)
+lost_files=sorted(set_a - set_b)
+
+print("Общие файлы: ", end=" ")
+for file in common_files:
+    print(file, end=" ")
+print()
+
+print("Потерянные файлы: ", end=" ")
+for file in lost_files:
+    print(file, end=" ")
+print()
