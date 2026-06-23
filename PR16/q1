@@ -1,0 +1,9 @@
+stroka = input()
+
+words = stroka.split()
+unique_words = set(words)
+
+print("Количество:", len(unique_words))
+
+sorted_words = sorted(unique_words)
+print("Слова:", " ".join(sorted_words))
