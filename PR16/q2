@@ -1,0 +1,12 @@
+allowed_str="10 20 30"
+incoming_str="20 40 10 50"
+
+allowed_id=set(allowed_str.split())
+incoming_id=incoming_str.split()
+
+for id in incoming_id:
+    if id in allowed_id:
+        print("Хорошо")
+    else:
+        print("Добавленно")
+        allowed_id.add(id)
